@@ -1,1 +1,2 @@
 # sign-up
+ A recreation of The Odin Project's Sign-up Form assignment, built with HTML and CSS. Features a full-height background image with a logo overlay, an info section, and a multi-field sign-up form (name, email, phone, password) styled with Flexbox, a custom @font-face font, and :focus/:user-invalid input states for validation feedback.
