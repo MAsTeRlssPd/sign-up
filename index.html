@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img class="image" src="badminton.jpg" alt="A badminton racket with shuttle">
+    <div class="container">
+        <div class="first">
+            <h1>Ready to Smash Your Goals?</h1>
+            <p>Join Us!<br>Create your student account today to unlock professional coaching, book training sessions, and track your badminton progress.</p>
+        </div>
+        <div class="second">
+            <form id="sign-up">
+                <div class="yourname">
+                    <div class="firstname">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Lakshya" required>
+                    </div>
+                    <div class="lastname">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Sen" required>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+                    </div>
+                    <div class="phonenum">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number" placeholder="+91 XXXXXXXXXX" required>
+                    </div>
+                </div>
+                <div class="pass">
+                    <div class="pwd">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="confpass">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="third">
+            <button type="submit" form="sign-up">Sign Up</button>
+            <div class="text">Already have an account? <a href = "#">Log in</a></div>
+        </div>
+    </div>
+    <script>
+        const passinputs = document.querySelectorAll('#password, #confirm-password');
+
+        passinputs.forEach(input=> {
+            input.addEventListener('input', () => {
+                if(input.value.length>0) input.style.borderColor = "green";
+                else input.style.borderColor = "red";
+            })
+        });
+    </script>
+
+
+
+</body>
+</html>
